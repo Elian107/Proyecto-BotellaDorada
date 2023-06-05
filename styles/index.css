@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.encabezado{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.encabezado img{
+    height: 80px;
+    margin-top: 10px;
+}
+
+
+
+/*BARRA DE NAVEGACION*/
+.navBar{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-color: #FFFF94;
+}
+
+.navBar h2{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    position: relative;
+}
+
+.navBar i{
+    color: black;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.navBar i:hover{
+    color: #EFB810;
+}
+
+.navBar a:hover span{
+    display: inline-block;
+}
+
+.navBar .tool1{
+    background-color: #EFB810;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 3px 10px;
+    z-index: 500;
+    text-align: right;
+    bottom: 5px;
+    right: 44px;
+    width: max-content;
+
+    position: absolute;
+    display: none;
+}
+
+.tool1::after{
+    content: "";
+    border-top: 12px solid transparent;
+    border-left: 12px solid #EFB810;
+    border-right: 12px solid transparent;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+
+}
+
+.navBar .tool2{
+    background-color: #EFB810;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 3px 10px;
+    z-index: 500;
+    text-align: left;
+    bottom: 5px;
+    left: 40px;
+    width: max-content;
+
+    position: absolute;
+    display: none;
+}
+
+.tool2::after{
+    content: "";
+    border-top: 14px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 14px solid #EFB810;
+    position: absolute;
+
+    left: -21px;
+
+}
+
+
+
+/* ITEMS TARJETS*/
+.tarjetasBox{
+    background-color: black;
+    height: max-content;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.tarjetasBox .tarjeta{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 270px;
+    height: 370px;
+    background-color: black;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #FFFF94 0%, #EFB810 100%) 1;
+
+    padding: 10px;
+}
+
+.tarjetasBox .tarjeta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjetasBox .tarjeta h2{
+    position: absolute;
+    font-size: 16px;
+    padding-left: 300px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #EFB810;
+}
+
+/* EFECTO HOVER TARJETAS */
+.tarjetasBox .tarjeta:hover{
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #EFB810;
+}
+
+
+
+/*PIE DE PAGINA*/
+.piedePagina{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.piedePagina p{
+    font-size: 13px;
+    width: 600px;
+    margin: auto;
+}
+
+
+
+/* PRODUCTO CARDS*/
+.productosBox{
+    height: max-content;
+    padding: 30px 300px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.productosBox .productosCard{
+    display: inline-block;
+    margin-top: 10px;
+    width: 220px;
+    height: 320px;
+    background-color: black;
+    border: 1px solid white;
+    margin-left: 20px;
+
+    padding: 10px;
+}
+
+.productosBox .productosCard img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.productosBox .productosCard h3{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.productosBox .productosCard p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.productosBox .productosCard p{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.productosBox .productosCard label{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EFB810;
+}
+
+.productosBox .productosCard button{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px 25px;
+    color: black;
+    background-color: #FFFF94;
+    border: 1px solid white;
+}
+
+.productosBox .productosCard button:hover{
+    cursor: pointer;
+    background-color: #EFB810;
+}
+
+
+
+/* QUIENES SOMOS BOX*/
+.quienesSomosBox{
+    height: max-content;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+.quienesSomosBox .box1{
+
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.quienesSomosBox .box1 img{
+    width: 400px;
+    margin: 10px;
+}
+
+.quienesSomosBox .box1 .info{
+    width: 600px;
+    color: black;
+    padding-left: 20px;
+    text-align: left;
+    align-items: center;
+}
+
+.quienesSomosBox .box1 .info h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quienesSomosBox .box1 .info p{
+    margin-bottom: 10px;
+}
+
+
+
+/* CONTÁCTANOS*/
+.formularioBox{
+    height: max-content;
+    padding: 30px 200px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+
+.formularioBox form{
+    margin-top: 20px;
+}
+
+.formularioBox form p{
+    display: inline-block;
+    text-align: left;
+    width: 90px;
+    margin-top: 13px;
+}
+
+.formularioBox input{
+    font-size: 15px;
+    padding: 3px 8px;
+}
+
+.formularioBox textarea{
+    margin-top: 20px;
+    width: 400px;
+    padding: 10px 20px;
+}
+
+.formularioBox .boton{
+    background-color: #FFFF94;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+
+
+
+/*RESPONSIVE*/
+@media(max-width:1330px){
+    .productosBox{
+        padding: 30px 180px;
+    }
+
+    .formularioBox{
+        padding: 30px 180px;
+    }
+}
+
+@media(max-width:1100px){
+    .productosBox{
+        padding: 30px 70px;
+    }
+
+    .formularioBox{
+        padding: 30px 80px;
+    }
+}
+
+@media(max-width:652px){
+    .productosBox{
+        padding: 30px 10px;
+    }
+
+    .formularioBox{
+        padding: 30px 40px;
+    }
+
+    .formularioBox textarea{
+        width: 300px;
+    }
+
+    .productosBox .productosCard{
+        margin-left: 10px;
+    }
+
+    .piedePagina p{
+        font-size: 12px;
+        width: 400px;
+    }
+    
+}
+
+
+
+
+
